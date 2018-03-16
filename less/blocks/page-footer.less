@@ -1,0 +1,30 @@
+.page-footer {
+  width: 100%;
+  color: #7f8591;
+  background-color: #373c43;
+  box-sizing: border-box;
+}
+
+.page-footer__text {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 12px;
+  line-height: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 27px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 33px;
+    width: 639px;
+  }
+}
