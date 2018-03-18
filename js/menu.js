@@ -6,7 +6,7 @@ var pageHeader = document.querySelector(".page-header__nav-wrapper");
 
 navMenu.classList.remove("main-nav--nojs");
 
-navToggle.addEventListener("click", function (evt) {
+navToggle.addEventListener("click", function () {
   if (navMenu.classList.contains("main-nav--closed")) {
     navMenu.classList.remove("main-nav--closed");
     navMenu.classList.add("main-nav--opened");

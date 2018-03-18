@@ -21,7 +21,7 @@
   box-sizing: border-box;
   border: 1px solid #e4e9ee;
   border-radius: 5px;
-  
+
   @media (min-width: @mobile-width) {
     width: 350px;
   }
@@ -51,13 +51,13 @@
     height: 42px;
     background-color: #e4e9ee;
   }
-  
+
   @media (min-width: @mobile-width) {
     &::after {
       width: 349px;
     }
   }
-  
+
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 26px;
@@ -105,13 +105,16 @@
     display: block;
     margin-left: auto;
     width: 137px;
+    background-image: url("../img/question.png");
+    background-repeat: no-repeat;
+    background-position: 100px 7px;
   }
-  
+
   @media (min-width: @mobile-width) {
     &--small {
       width: 64px;
     }
-    
+
     &--big {
       width: 318px;
     }

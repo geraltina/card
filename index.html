@@ -6,7 +6,7 @@
     <title>Оплата</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body class="page-body">
+  <body class="page-body  clearfix">
     <header class="page-header">
       <div class="page-header__wrapper  page-header__wrapper--index">
         <div class="page-header__nav-wrapper">
@@ -56,10 +56,10 @@
                 <div class="form__field  form__field--number">
                   <label for="number" class="form__label">Номер карты</label>
                   <div class="form__inputs" id="number">
-                    <input type="text" class="form__input form__input--small" required>
-                    <input type="text" class="form__input form__input--small" required>
-                    <input type="text" class="form__input form__input--small" required>
-                    <input type="text" class="form__input form__input--small" required>
+                    <input type="text" minlength="4" maxlength="4" class="form__input form__input--small" required pattern="[0-9]{4}">
+                    <input type="text" minlength="4" maxlength="4" class="form__input form__input--small" required pattern="[0-9]{4}">
+                    <input type="text" minlength="4" maxlength="4" class="form__input form__input--small" required pattern="[0-9]{4}">
+                    <input type="text" minlength="4" maxlength="4" class="form__input form__input--small" required pattern="[0-9]{4}">
                   </div>
                 </div>
                 <div class="form__field  form__field--date">
@@ -88,11 +88,11 @@
                     </select>
                   </div>
                 </div>
-                <input type="text" class="form__input form__input--big" placeholder="Держатель карты" required minlength="4">
+                <input type="text" class="form__input form__input--big" placeholder="Держатель карты" required minlength="4" pattern="[a-zA-Z]{4,}">
               </div>
               <div class="form__wrapper  form__wrapper--magnet">
                 <label for="code" class="form__label  form__label--code">Код CVV2 / CVC2</label>
-                <input type="text" class="form__input form__input--code" id="code" required>
+                <input type="text" minlength="3" maxlength="3" class="form__input form__input--code" id="code" required pattern="[0-9]{3}">
               </div>
               <button type="submit" class="button">Оплатить</button>
             </form>
@@ -116,6 +116,7 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/validation.js"></script>
   </body>
 </html>

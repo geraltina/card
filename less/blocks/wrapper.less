@@ -1,5 +1,9 @@
 .wrapper {
   box-sizing: border-box;
+
+  @media (min-width: @desktop-width) {
+    float: right;
+  }
 }
 
 .wrapper--width {
@@ -16,7 +20,7 @@
     width: 768px;
     .padding(50px, 50px)
   }
-  
+
   @media (min-width: @desktop-width) {
     width: 639px;
     padding: 0;
